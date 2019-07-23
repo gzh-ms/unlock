@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>手势解锁</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background: #305066;
+    }
+
+    .wrap {
+      height: 100%;
+      text-align: center;
+    }
+
+    .title {
+      padding: 15px 0;
+      color: #22c3aa;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap" class="wrap"></div>
+  <script src="./byBabelTransform.js"></script>
+  <script>
+    new Unlock({
+      container: 'wrap',
+      width: 300,
+      height: 300,
+      type: 3,
+      style: 'hollow'
+    });
+  </script>
+</body>
+
+</html>
